@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Hello Kareem</h1>
-        { this.state.data }
+        {JSON.stringify(this.state.data, null, 2)}
       </div>
     );
   }
