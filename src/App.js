@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Database } from "./Firebase";
 import './App.css'
+import SignIn from './components/SignIn'
 
 class App extends Component {
 
@@ -26,8 +27,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello Kareem</h1>
-        {JSON.stringify(this.state.data, null, 2)}
+        <SignIn />
+        {/*{JSON.stringify(this.state.data, null, 2)}*/}
       </div>
     );
   }
